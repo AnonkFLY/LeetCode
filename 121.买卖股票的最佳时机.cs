@@ -6,7 +6,7 @@ using System;
  */
 
 // @lc code=start
-public class Solution
+public class Solution121
 {
     public int MaxProfit(int[] prices)
     {
