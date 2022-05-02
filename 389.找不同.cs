@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-public class Solution
+public class Solution389
 {
     //tired -5.1
     public char FindTheDifference(string s, string t)
