@@ -5,7 +5,7 @@
  */
 
 // @lc code=start
-public class Solution
+public class Solution509
 {
     //刚回家咕咕咕，预计下半个月尝试中等题目并进一步学习数据结构与算法
     //昨天直接鸽了
