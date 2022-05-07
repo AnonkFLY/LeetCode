@@ -21,17 +21,17 @@ namespace SortingAlgorithm
     {
         private List<int> _originArray;
         private List<TestSortMethod> _sorts = new List<TestSortMethod>();
-        private ISortable _unmistakableSort;
+        private int[] _correctArray;
         private Stopwatch _stopwatch = new Stopwatch();
 
-        public SortTest(ISortable unmistakableSort, int[] orginArray)
+        public SortTest(int[] orginArray)
         {
-            this._unmistakableSort = unmistakableSort ?? throw new System.NullReferenceException();
             _originArray = new List<int>(orginArray) ?? throw new System.NullReferenceException();
         }
 
-        public void AddTestSortingAlgorithm<T>(T obj) where T : ISortable
+        public void AddTestSortingAlgorithm<T>() where T : ISortable, new()
         {
+            var obj = new T();
             _sorts.Add(new TestSortMethod(obj, obj.GetType().ToString()));
         }
         public void ResetSortingAlgorithm()
@@ -44,16 +44,12 @@ namespace SortingAlgorithm
         public string Test()
         {
             StringBuilder stringBuilder = new StringBuilder("Orgin Array: ");
-            var correctArray = _unmistakableSort.Sort(_originArray.ToArray());
             foreach (var item in _originArray)
             {
                 stringBuilder.Append($"{item} ");
             }
             stringBuilder.Append("\nCorrect Array: ");
-            foreach (var item in correctArray)
-            {
-                stringBuilder.Append($"{item} ");
-            }
+
             stringBuilder.Append("\n");
             foreach (var item in _sorts)
             {
@@ -61,8 +57,21 @@ namespace SortingAlgorithm
                 _stopwatch.Restart();
                 item.sortable.Sort(array);
                 _stopwatch.Stop();
-                var correct = Enumerable.SequenceEqual(array, correctArray);
-                stringBuilder.Append($"[{item.sortName}] correct is [{correct}] time spent [{_stopwatch.Elapsed}]\n");
+                if (_correctArray == null)
+                {
+                    _correctArray = array;
+                    foreach (var num in _correctArray)
+                    {
+                        stringBuilder.Append($"{num} ");
+                    }
+                    stringBuilder.Append("\n");
+                }
+                var correct = Enumerable.SequenceEqual(array, _correctArray);
+                stringBuilder.Append($"[{item.sortName}] correct is [{correct}] time spent [{_stopwatch.Elapsed}]");
+                if (!correct)
+                    foreach (var num in array)
+                        stringBuilder.Append($"{num} ");
+                stringBuilder.Append("\n");
             }
             return stringBuilder.ToString();
         }
