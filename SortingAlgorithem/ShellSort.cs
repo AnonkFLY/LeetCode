@@ -18,7 +18,6 @@ namespace SortingAlgorithm
                 for (i = gap; i < array.Length; i++)
                 {
                     temp = array[i];
-                    //i-gap:1 
                     for (j = i; j >= gap && array[j - gap] > temp; j -= gap)
                         array[j] = array[j - gap];
                     array[j] = temp;

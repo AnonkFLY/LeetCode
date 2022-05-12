@@ -27,9 +27,10 @@ namespace LeetCode
             sortTest.AddTestSortingAlgorithm<ShellSort>();
             Console.Write(sortTest.Test());
         }
-        //测试结果:2022-05-07 21:27:14  感觉会因为数据原因又会有差别
-        // [SortingAlgorithm.BubbleSort] correct is [True] time spent [00:00:00.0001463]
-        // [SortingAlgorithm.SelectionSort] correct is [True] time spent [00:00:00.0001305]
-        // [SortingAlgorithm.InsertionSort] correct is [True] time spent [00:00:00.0000946]
+        //最后测试结果:2022年05月12日 11.30.09 
+        // [SortingAlgorithm.BubbleSort] correct is [True] time spent [00:00:00.0002274]
+        // [SortingAlgorithm.SelectionSort] correct is [True] time spent [00:00:00.0001267]
+        // [SortingAlgorithm.InsertionSort] correct is [True] time spent [00:00:00.0000923]
+        // [SortingAlgorithm.ShellSort] correct is [True] time spent [00:00:00.0000968]
     }
 }
