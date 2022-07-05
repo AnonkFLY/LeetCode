@@ -8,13 +8,33 @@ namespace LeetCode
         static int[] array = new int[] { 124, 54135, 6534, 7, 7456, 541, 5454, 6, 57345, 354, 736, 4 };//{1,4,5,7,3,2,8,6,9};//
         static void Main(string[] args)
         {
+
             //手动智能补全模式 确信
             Console.WriteLine("This a algorithm project!");
-            SortTest();
+            TestAlgrothm();
+            
+            //SortTest();
         }
+
+        private static void TestAlgrothm()
+        {
+            var defaultData = new int[][]{
+                new int[]{1,2,3},
+                new int[]{4,5,6},
+                new int[]{7,8,9},
+            };
+            ITestable obj = (ITestable)new Solution();
+            obj.Test(defaultData);
+        }
+        public static void Print(object text)
+        {
+            Console.Write(text);
+        }
+
         //闲的蛋疼写个简单的排序测试框架。。
         //冒泡+选择，我不能理解为什么选择排序慢这么多，但是在执行多次后Csharp的优化结果都差不多，不懂，后面有时间写一个Cpp的测试一下
         //2022-05-07 21:20:31 是因为在作为正确排序执行一次后的优化。解决方法:拿第一次执行的作为正确答案:所以应确保第一个排序算法总是正确的。
+        //2022年6月13日 缓存命中应该是 和CSharp优化无关
         static void SortTest()
         {
             var bubbleSort = new BubbleSort();

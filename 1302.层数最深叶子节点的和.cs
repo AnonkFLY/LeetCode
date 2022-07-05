@@ -20,7 +20,7 @@ using System;
 *     }
 * }
 */
-public class Solution {
+public class Solution1302 {
     public int DeepestLeavesSum(TreeNode root) {
         int sum = 0;
         int maxLevel = 0;
