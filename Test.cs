@@ -4,12 +4,8 @@ public class Test
 {
     public void TestAlgrothm()
     {
-        var defaultData = new int[][]{
-            new int[]{1,2,3},
-            new int[]{4,5,6},
-            new int[]{7,8,9},
-        };
-        TestAlgrothm<Solution104>(defaultData);
+        var defaultData = new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4,new ListNode(5,null)))));
+        TestAlgrothm<Solution>(defaultData);
     }
 
     // public void Print(object text)
