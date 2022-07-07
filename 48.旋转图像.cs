@@ -7,7 +7,7 @@
 // @lc code=start
 
 
-public class Solution// : ITestable
+public class Solution48// : ITestable
 {
     public void RotateIndex(int[][] matrix, int x, int y, int count)
     {

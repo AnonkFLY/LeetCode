@@ -8,24 +8,12 @@ namespace LeetCode
         static int[] array = new int[] { 124, 54135, 6534, 7, 7456, 541, 5454, 6, 57345, 354, 736, 4 };//{1,4,5,7,3,2,8,6,9};//
         static void Main(string[] args)
         {
-
             //手动智能补全模式 确信
             Console.WriteLine("This a algorithm project!");
-            TestAlgrothm();
-            
+            new Test().TestAlgrothm();
             //SortTest();
         }
 
-        private static void TestAlgrothm()
-        {
-            var defaultData = new int[][]{
-                new int[]{1,2,3},
-                new int[]{4,5,6},
-                new int[]{7,8,9},
-            };
-            ITestable obj = (ITestable)new Solution();
-            obj.Test(defaultData);
-        }
         public static void Print(object text)
         {
             Console.Write(text);
