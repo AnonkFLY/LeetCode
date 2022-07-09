@@ -14,25 +14,51 @@ using System.Collections.Generic;
 */
 public class Solution206
 {
+    //2022年7月9日 尝试原地反转，原:使用栈
     public ListNode ReverseList(ListNode head)
     {
-        Stack<ListNode> stack = new Stack<ListNode>();
+        // beat
+        // if (head == null)
+        //     return head;
+        // ListNode tail = null;
+        // while (head != null)
+        // {
+        //     var temp = head.next;
+        //     head.next = tail;
+        //     tail = head;
+        //     head = temp;
+        // }
+        // return head;
         if (head == null)
             return head;
-        while (head != null)
+        ListNode tail = null;
+        while (head.next != null)
         {
-            stack.Push(head);
+            var temp = tail;
+            tail = head;
             head = head.next;
+            tail.next = temp;
         }
-        head = stack.Pop();
-        var last = head;
-        while (stack.Count > 0)
-        {
-            var get = stack.Pop();
-            last.next = get;
-            last = last.next;
-        }
-        last.next = null;
+        head.next = tail;
         return head;
+        // use stakc...
+        // Stack<ListNode> stack = new Stack<ListNode>();
+        // if (head == null)
+        //     return head;
+        // while (head != null)
+        // {
+        //     stack.Push(head);
+        //     head = head.next;
+        // }
+        // head = stack.Pop();
+        // var last = head;
+        // while (stack.Count > 0)
+        // {
+        //     var get = stack.Pop();
+        //     last.next = get;
+        //     last = last.next;
+        // }
+        // last.next = null;
+        // return head;
     }
 }

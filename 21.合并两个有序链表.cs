@@ -9,7 +9,7 @@
  *     }
  * }
  */
-public class Solution
+public class Solution21
 {
     public ListNode MergeTwoLists(ListNode list1, ListNode list2)
     {

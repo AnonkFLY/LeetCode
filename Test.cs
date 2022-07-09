@@ -4,8 +4,8 @@ public class Test
 {
     public void TestAlgrothm()
     {
-        var defaultData = new ListNode(1,new ListNode(2,new ListNode(3,new ListNode(4,new ListNode(5,null)))));
-        TestAlgrothm<Solution>(defaultData);
+        var defaultData = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5, null)))));
+        //TestAlgrothm<Solution>(defaultData);
     }
 
     // public void Print(object text)
@@ -22,7 +22,7 @@ public class Test
         }
         catch (Exception e)
         {
-            Console.Write("错误:" + e);
+            Console.Write("\n错误:" + e);
         }
     }
 }
