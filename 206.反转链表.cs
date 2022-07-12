@@ -17,7 +17,7 @@ public class Solution206
     //2022年7月9日 尝试原地反转，原:使用栈
     public ListNode ReverseList(ListNode head)
     {
-        // beat
+        // form beat solution  2022年7月11日补充: 这个方式是有问题的
         // if (head == null)
         //     return head;
         // ListNode tail = null;
