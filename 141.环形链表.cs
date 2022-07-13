@@ -9,7 +9,7 @@
  *     }
  * }
  */
-public class Solution
+public class Solution141
 {
     public bool HasCycle(ListNode head)
     {
