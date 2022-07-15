@@ -4,8 +4,8 @@ public class Test
 {
     public void TestAlgrothm()
     {
-        var defaultData = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(1, null))));
-        //TestAlgrothm<Solution>(defaultData);
+        var defaultData = new int[] { 0 };
+        TestAlgrothm<Solution>(defaultData);
     }
 
     // public void Print(object text)

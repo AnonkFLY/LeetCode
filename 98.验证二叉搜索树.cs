@@ -11,7 +11,7 @@
  *     }
  * }
  */
-public class Solution
+public class Solution98
 {
     public bool IsValidBST(TreeNode root)
     {
