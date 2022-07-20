@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-public class Solution
+public class Solution350
 {
     public int[] Intersect(int[] nums1, int[] nums2)
     {
