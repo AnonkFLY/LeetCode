@@ -4,8 +4,7 @@ public class Test
 {
     public void TestAlgrothm()
     {
-        var defaultData = new int[] { 0 };
-        TestAlgrothm<Solution>(defaultData);
+        TestAlgrothm<Solution>(null);
     }
 
     // public void Print(object text)

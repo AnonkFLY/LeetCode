@@ -1,7 +1,8 @@
-public class Solution
+public class SolutionIQ1
 {
     public bool IsUnique(string astr)
     {
+        // 原题是限制在26位小写字母，优解是 使用一个32位数据用1位去储存一个字母
         if (astr.Length > 26)
             return false;
         // int length = astr.Length;
