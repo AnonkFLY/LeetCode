@@ -4,7 +4,7 @@ public class Test
 {
     public void TestAlgrothm()
     {
-        TestAlgrothm<Solution>(null);
+        TestAlgrothm<Solution>(new string[] { "teacher", "bleacher" });
     }
 
     // public void Print(object text)

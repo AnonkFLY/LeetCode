@@ -1,6 +1,6 @@
 using System;
 
-public class Solution
+public class SolutionIQ3
 {
     public string ReplaceSpaces(string S, int length)
     {
