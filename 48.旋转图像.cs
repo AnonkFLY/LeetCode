@@ -9,10 +9,6 @@
 
 public class Solution48// : ITestable
 {
-    public void RotateIndex(int[][] matrix, int x, int y, int count)
-    {
-
-    }
     public void Rotate(int[][] matrix)
     {
         //Rotate
