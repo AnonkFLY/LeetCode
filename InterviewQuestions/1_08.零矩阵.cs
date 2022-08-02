@@ -1,9 +1,27 @@
 using System.Collections.Generic;
 
-public class Solution
+public class SolutionIQ1_08
 {
     public void SetZeroes(int[][] matrix)
     {
+        int m = matrix.Length;
+        int n = matrix[0].Length;
+        bool flag = false;
+        for (int i = 0; i < m; ++i)
+        {
+            if (matrix[i][0] == 0)
+                flag = true;
+            for (int j = 1; j < n; ++j)
+                if (matrix[i][j] == 0)
+                    matrix[i][0] = matrix[0][j] = 0;
+        }
+        for(int i = m-1;i>=0;--i){
+            for(int j = 1;j<n;++j)
+                if(matrix[i][0]==0||matrix[0][j]==0)
+                    matrix[i][j] = 0;
+            if(flag)
+                matrix[i][0] = 0;
+        }
         #region  还行，但是空间复杂度高了
         // if (matrix.Length <= 0)
         //     return;

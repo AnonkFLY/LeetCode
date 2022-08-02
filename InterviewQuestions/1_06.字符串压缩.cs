@@ -1,6 +1,6 @@
 using System.Text;
 
-public class SolutionIQ6
+public class SolutionIQ1_06
 {
     public string CompressString(string S)
     {

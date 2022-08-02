@@ -1,4 +1,4 @@
-public class SolutionIQ2
+public class SolutionIQ1_02
 {
     public bool CheckPermutation(string s1, string s2)
     {

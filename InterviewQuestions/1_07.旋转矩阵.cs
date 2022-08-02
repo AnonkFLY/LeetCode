@@ -1,4 +1,4 @@
-public class SolutionIQ7
+public class SolutionIQ1_07
 {
     public void Rotate(int[][] matrix)
     {

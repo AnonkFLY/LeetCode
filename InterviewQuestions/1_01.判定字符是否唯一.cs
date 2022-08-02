@@ -1,4 +1,4 @@
-public class SolutionIQ1
+public class SolutionIQ1_01
 {
     public bool IsUnique(string astr)
     {

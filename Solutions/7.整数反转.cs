@@ -1,4 +1,4 @@
-public class Solution
+public class Solution7
 {
     public int Reverse(int x)
     {

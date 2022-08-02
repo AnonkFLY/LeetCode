@@ -1,6 +1,6 @@
 using System;
 
-public class SolutionIQ5
+public class SolutionIQ1_05
 {
     public bool OneEditAway(string first, string second)
     {

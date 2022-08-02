@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-public class SolutionIQ4
+public class SolutionIQ1_04
 {
     public bool CanPermutePalindrome(string s)
     {
