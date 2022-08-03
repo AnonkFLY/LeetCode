@@ -5,7 +5,7 @@ public class Test
     public void TestAlgrothm()
     {
         // [[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]
-        TestAlgrothm<Solution>(new int[][] { new int[] { 1, 2, 3, 4 }, new int[] { 5, 6, 7, 8 }, new int[] { 9, 10, 11, 12 }, new int[] { 13, 14, 15, 16 } });
+        TestAlgrothm<Solution>(new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(1)))));
     }
 
     // public void Print(object text)
