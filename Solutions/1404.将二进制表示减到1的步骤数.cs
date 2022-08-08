@@ -1,6 +1,6 @@
 using System;
 
-public class Solution
+public class Solution1404
 {
     public int NumSteps(string s)
     {
