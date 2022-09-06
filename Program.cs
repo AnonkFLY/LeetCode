@@ -10,7 +10,8 @@ namespace LeetCode
         {
             //手动智能补全模式 确信
             Console.WriteLine("This a algorithm project!");
-            new Test().TestAlgrothm();
+            new Test().TestAlgrothm(); 
+            // Console.WriteLine("abcd".Substring(, 3));
             //SortTest();
         }
 

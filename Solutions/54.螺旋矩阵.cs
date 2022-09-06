@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-public class Solution : ITestable
+public class Solution54
 {
     public IList<int> SpiralOrder(int[][] matrix)
     {
@@ -33,8 +33,4 @@ public class Solution : ITestable
         return result;
     }
 
-    public void Test(object defaultData)
-    {
-        var re = SpiralOrder((int[][])defaultData);
-    }
 }
